@@ -1,0 +1,285 @@
+/*  ================ Table of Content End ================
+        1. Fonts
+        2. Reset
+        3. Variables
+        4. Global
+        5. Header
+        6. Home
+        7. Venue sliders
+    ================ Table of Content End ================ */
+
+
+/* Fonts  */
+@font-face {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/segoe/Segoe-UI.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: normal;
+    src: url('../fonts/segoe/Segoe-Ui-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/segoe/Segoe-UI-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../fonts/segoe/Segoe-UI-Bold-Italic.woff') format('woff');
+}
+
+ 
+
+/* ======== Reset ======== */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+
+/* ======== Variables ========*/
+
+:root {
+    --green-light: #00aeaf;
+    --green-dark: #019d9e;
+}
+
+
+/* ======== Global ========*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+
+    font-family: 'Segoe UI Regular';
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+} */
+
+.bg-green-light {
+    background-color: var(--green-light);
+}
+
+.bg-green-dark {
+    background-color: var(--green-dark);
+}
+.text-sm{
+    font-size: 14px;
+}
+.text-md{
+    font-size: 16px;
+}
+.opcity-75{
+    opacity: 0.75;
+}
+.hover-none:hover{
+    background-color:var(--green-dark)!important;
+    
+}
+.t-color {
+    color: var(--green-dark);
+}
+a:hover{
+    color: var(--green-dark);
+}
+/* ~~~~~~~~~~~~~~ Gloabal Classes End ~~~~~~~~~~~~~~~~~~~ */
+
+.header-form-select {
+    background-color:var(--green-light);
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: white;
+
+}
+
+.cus-search {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--green-dark)
+}
+
+.fa-magnifying-glass {
+    width: auto;
+    max-height: 15px;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.custome-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 400;
+    line-height: 0;
+    height: 30px;
+}
+/* ********************* Sticky Cllasses ********************* */
+
+.sticky{
+	position: fixed;
+	top: 0!important;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	background-color: var(--green-dark);
+	box-shadow: 0 13px 35px -12px rgba(61,82,96,.2);
+	animation: stickyMenu 0.75s ease-in-out;
+}
+@keyframes stickyMenu{
+	0%{
+		margin-top: -120px;
+		opacity: 0;
+	}
+	50%{
+		margin-top: -64px;
+		opacity: 0;
+	}
+	100%{
+		margin-top: 0px;
+		opacity: 1;
+	}
+}
+/********************** Nav Drop Down Common Class***************** */
+.subMenu{
+    width: 950px!important;
+    position: absolute;
+    top: 120%!important;
+    left: -100px!important;
+     
+}
+/* .subMenu ul{
+    display: block;
+    width: 200px!important;
+    padding:  0 10px;
+} */
+/* @media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -100px;
+} */
+
+/* ************************Home/Hero style************************** */
+.hero {
+    width: 100%;
+    height: calc(90vh - 90px);
+      background-image: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0)),url("../image/delhi_bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    object-fit: contain; 
+}
+
+.popular-content span{
+    color: white;
+}
+/********************** Venue sliders***************** */
+.venue-details{
+    height: 120px;
+}
+.venue-details .venue-img img{
+    width: 100%!important;
+    height: 100%;
+}
+.venue-details-containt > a,span{
+    color: var(--green-dark);
+}
+.venue-details-containt a:hover{
+    font-weight: 700;
+}
+
+/* ************************ Popular Searches slider ************************ */
+
+.popular-search .popular-img img{
+    width: 100%;
+    height: 300px;
+transition: all 2s ease-in-out;
+}
+.popular-img{
+    overflow: hidden;
+}
+.popular-search .popular-img img:hover{
+    transform: scale(1.5);
+}
+/* *************************responsive************************ */
+  @media (max-width:600px){
+    .hero{
+        width: 100%;
+        height: calc(62vh - 90px);
+    }
+    .poo-content{
+        display: none;
+    }
+    .subMenu{
+        width: 320px!important;
+                
+    }
+}  
+
+.navbar .megamenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+/* ============ mobile view .end// ============ */
