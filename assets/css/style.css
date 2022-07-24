@@ -31,19 +31,22 @@
     left: 100px;
     top: 0;
 }
+
 .counter {
-  animation-duration: 1s;
-  animation-delay: 0s;
+    animation-duration: 1s;
+    animation-delay: 0s;
 }
-.preloader{
+
+.preloader {
     position: fixed;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 100%;
     z-index: 9999999;
-    background:url(../image/loader.gif) center no-repeat #1c1c1c;
-} 
+    background: url(../image/loader.gif) center no-repeat #1c1c1c;
+}
+
 /* Fonts  */
 @font-face {
     font-family: 'Segoe UI';
@@ -71,7 +74,8 @@
     font-style: italic;
     font-weight: bold;
     src: url('../fonts/segoe/Segoe-UI-Bold-Italic.woff') format('woff');
-} 
+}
+
 /* ======== Reset ======== */
 
 *,
@@ -164,25 +168,28 @@ a:hover {
     color: var(--green-dark);
 }
 
-.c-btn{
-    box-shadow: none!important;
-    border: none!important;
-    background-color: var(--green-dark)!important;
+.c-btn {
+    box-shadow: none !important;
+    border: none !important;
+    background-color: var(--green-dark) !important;
 }
+
 .form-control {
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
     background: none !important;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 5px;
     background-color: var(--green-dark);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: white;
 }
- 
+
 /* ~~~~~~~~~~~~~~ Gloabal Classes End ~~~~~~~~~~~~~~~~~~~ */
 
 .header-form-select {
@@ -221,9 +228,10 @@ a:hover {
     height: 30px;
 }
 
-.ob-t-f{
+.ob-t-f {
     object-fit: cover;
 }
+
 .common:hover {
     background-color: var(--green-dark) !important;
     color: white !important;
@@ -236,9 +244,11 @@ a:hover {
     color: white !important;
     border: 1px solid var(--green-light);
 }
-.cus-border{
-    border: 1px solid var(--green-dark);
+
+.cus-border {
+    border: 1px solid var(--green-dark) !important;
 }
+
 /* ================= Slick button style======================= */
 .slick-next:before,
 .slick-prev:before {
@@ -263,7 +273,7 @@ a:hover {
     left: 40px;
     z-index: 1;
 }
-  
+
 /* ********************* Sticky Cllasses ********************* */
 
 .sticky {
@@ -300,7 +310,7 @@ a:hover {
 .hero {
     width: 100%;
     height: calc(90vh - 90px);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url("../image/delhi_bg.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../image/delhi_bg.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: none;
@@ -321,8 +331,8 @@ a:hover {
     height: 100%;
 }
 
-.venue-details-containt > a,
-.venue-details-containt > span {
+.venue-details-containt>a,
+.venue-details-containt>span {
     color: var(--green-dark);
 }
 
@@ -420,8 +430,8 @@ a:hover {
 
 /* *************************DownLoad the app Banner***************** */
 
-.form-cust .form-control { 
-    border-bottom: 1px solid var(--green-dark) !important; 
+.form-cust .form-control {
+    border-bottom: 1px solid var(--green-dark) !important;
 }
 
 .animated-btn {
@@ -459,13 +469,15 @@ a:hover {
 }
 
 /* **********************footer********************* */
-.alert .form-control { 
-    border: 1px solid var(--green-dark) !important; 
+.alert .form-control {
+    border: 1px solid var(--green-dark) !important;
 }
+
 /* ========== mega menu ============= */
 .navbar .megamenu {
     padding: 1rem;
 }
+
 /* ===================== LogInpage style +======================= */
 .login-cover {
     width: 100%;
@@ -481,7 +493,7 @@ a:hover {
     line-height: 50px;
 }
 
-.login-form .form-control { 
+.login-form .form-control {
     width: 85% !important;
 }
 
@@ -544,93 +556,108 @@ a:hover {
               Hotel Info page  
 ===========================================================*/
 .hotel-cover {
-    width: 100%; 
+    width: 100%;
     height: 376px;
-    
-    position: relative; 
-    z-index:-1;
-} 
-.hotel-cover .hotel-cover-img{
-    width: 100%; 
+
+    position: relative;
+    z-index: -1;
+}
+
+.hotel-cover .hotel-cover-img {
+    width: 100%;
     height: 376px;
-    
-} 
-.info-box{
+
+}
+
+.info-box {
     width: 90%;
     height: 200px;
     margin: -40px auto 0 auto;
-    background:  white;
+    background: white;
     /* filter: opacity(0.5); */
 }
+
 /* Right Row */
- .hotel-form{
+.hotel-form {
     height: 675px;
     overflow: hidden;
- }
- .contact-sec{
-    position: absolute; 
- } 
- .contact{
-    left: -200%;
- }
-.accordion-button:not(.collapsed) {
-color: var(--green-dark)!important;
 }
+
+.contact-sec {
+    position: absolute;
+}
+
+.contact {
+    left: -200%;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--green-dark) !important;
+}
+
 .form-check-input:checked {
-    background-color: var(--green-dark)!important;
-    border-color: var(--green-light)!important;
+    background-color: var(--green-dark) !important;
+    border-color: var(--green-light) !important;
 }
 
 /*  <!-- image gallary -->*/
-     
-.Albums{
-    display: none;
-    
- }
- .videos{
+
+.Albums {
     display: none;
 
- }  
-.gallary li{
+}
+
+.videos {
+    display: none;
+
+}
+
+.gallary li {
     cursor: pointer;
-    
+
 }
- 
-.gallary-section .gal-img{
-height: 160px;
-width: 100%!important;
+
+.gallary-section .gal-img {
+    height: 160px;
+    width: 100% !important;
 }
-.Album .alb-img{
+
+.Album .alb-img {
     height: 225px;
-    width: 100%!important;
-    }
-.img-thumb{
+    width: 100% !important;
+}
+
+.img-thumb {
     position: absolute;
     top: 0;
-    right:5px;
+    right: 5px;
     color: white;
 }
-.alb-img-content{
+
+.alb-img-content {
     position: absolute;
     bottom: 5px;
     left: 5px;
 }
-.alb-img-content p{
+
+.alb-img-content p {
     line-height: 0.5rem;
     color: #fff;
 }
+
 /* ******************************Videos section ********************* */
-.videos-thumb{
+.videos-thumb {
     width: 100%;
-    height: auto; 
+    height: auto;
     background-image: url('../video/video.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
 /********************** Hotel info comment section*************************** */
-.comment-img img{
+.comment-img img {
     width: 70px;
     height: 70px;
     border-radius: 100%;
@@ -639,80 +666,133 @@ width: 100%!important;
 }
 
 /*<!--**************************** Gallary page section ******************* -->*/
- .side-img-gal{
+.side-img-gal {
     position: relative;
     padding: 10px;
 }
-.side-img-gal img{
-   
+
+.side-img-gal img {
+
     width: 100%;
     object-fit: cover;
 }
- /* =================== family-makeup-hero ========================== */
- .family-makeup-hero{
+
+/* =================== family-makeup-hero ========================== */
+.family-makeup-hero {
     width: 100%;
     height: calc(90vh - 90px);
-    background-image:  url("../image/family_makeup_banner.webp");
+    background-image: url("../image/family_makeup_banner.webp");
     background-size: cover;
     background-position: center;
     background-repeat: none;
     object-fit: contain;
     position: relative;
- }
- .hdfc{
-background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
- }
-  .package-inner-box, .inner-of-inner,.package-list{
+}
+
+.hdfc {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+
+.package-inner-box,
+.inner-of-inner,
+.package-list {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
- }
- .makeup-gallary-section .gal-img{
+}
+
+.makeup-gallary-section .gal-img {
     height: 190px;
     width: 100%;
- }
+}
 
- /* ==================Virtual Shoping-Services Page================= */
- /********************** Hero Banner ******************** */
- .virtual-hero {
+/* ==================Virtual Shoping-Services Page================= */
+/********************** Hero Banner ******************** */
+.virtual-hero {
     width: 100%;
     height: 500px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0,0.4)),url(../image/virtulal-hero-banner-img.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../image/virtulal-hero-banner-img.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     object-fit: contain;
 }
-.virtual-shoping-benifits{
-   position: relative;
-   top: -80px; 
-   left: 0;
-}
-.virtual-shoping-form{
+
+.virtual-shoping-benifits {
     position: relative;
-   top: -200px;
-   left: 0;
-} 
-.benifits-img{
+    top: -80px;
+    left: 0;
+}
+
+.virtual-shoping-form {
+    position: relative;
+    top: -200px;
+    left: 0;
+}
+
+.benifits-img {
     width: 120px;
     height: 120px;
-    
+
 }
+
 /* testimonial */
-.testimonial{
+.testimonial {
     position: relative;
     top: -150px;
     left: 0;
 }
-.testimonial-img{
+
+.testimonial-img {
     width: 80px;
     height: 80px;
     border-radius: 100%;
     border: 2px solid red;
 }
-.testimonial-img img{
+
+.testimonial-img img {
     width: 100%;
     height: 100%;
     border-radius: 100%;
 }
- 
- 
+
+/* ================== Real Weadding Page Style====================== */
+.rw_hero {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/rw-banner.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.option_1 .form-select {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    /* background: rgb(230, 229, 229) !important; */
+    padding: 15px 10px;
+}
+
+/*============================ rw-cover==================== */
+.rw-cover {
+    width: 100%;
+   height: 500px;
+}
+
+.rw-cover img {
+    height: 400px;
+    width:100%;
+    object-fit: cover;
+    
+}
+.rw-couple-title{
+    max-width: 150px;
+    min-height: 200px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: -100px;
+    left: 10px;
+    padding: 15px;
+
+}
