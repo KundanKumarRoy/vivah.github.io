@@ -1,4 +1,4 @@
-/*  ================ Table of Content End ================
+ /*  ================ Table of Content End ================
         1. Fonts
         2. Reset
         3. Variables
@@ -772,27 +772,98 @@ a:hover {
     /* background: rgb(230, 229, 229) !important; */
     padding: 15px 10px;
 }
-
+.main-img-box{
+    width: 100%;
+    height: 160px;
+}
+.main-img-box > img{
+    width: 100%;
+    height: 160px;
+}
+.main-img-1,.main-img-2{ 
+    width: 100%;
+    /* height: 80px;  */ 
+}
+.main-img-1 > img ,.main-img-2 >img{ 
+    width: 100%;
+    height: 80px;  
+}
+.main-img-1>img,.main-img-2>img{
+    width: 100%;
+    height: 100px; 
+} 
+.main-img-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.25rem;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
 /*============================ rw-cover==================== */
 .rw-cover {
     width: 100%;
    height: 500px;
 }
 
-.rw-cover img {
+.rw-cover .cover-img .cover-image {
     height: 400px;
     width:100%;
     object-fit: cover;
-    
+    position: relative;
 }
 .rw-couple-title{
     max-width: 150px;
     min-height: 200px;
     background-color: white;
     text-align: center;
-    position: relative;
-    top: -100px;
+    position: absolute;
+    bottom: -100px;
     left: 10px;
     padding: 15px;
 
+}
+.love-icon{
+    position: absolute;
+    top: 10px;
+    font-size: 25px;
+    color: red;
+    right: 10px;
+}
+.view-taged-vendors{
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.rw-couple-title .wed-ring{
+    height: 20px;
+    width: 20px;
+}
+/*tagged-vendor-type  */
+.tagged-vendor-type{
+    border: 1px dotted var(--green-dark);
+    padding: 10px;
+}
+ .fa-camera, .fa-cake-candles{
+    -webkit-text-stroke: 2px   red;
+    color: transparent;
+ }
+ 
+/* Swiper Styleing */
+.ks-swiper{
+    
+    height: 450px;
+}
+.ks-swiper div img{
+    height: 450px; 
+}
+.kr-slider img{
+    width: 100%;
+    height: 100px;
 }
