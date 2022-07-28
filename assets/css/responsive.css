@@ -1,4 +1,4 @@
- @media (max-width:992px) {
+@media (max-width:992px) {
     .megamenu{
         height: 400px;
         overflow: scroll; 
@@ -122,6 +122,20 @@ h2{
     .cus-slider{
         height: 300px;
     }
+    .cus-margin{
+        margin-top: 300px;
+    }
+    .lehenga-shop {
+        height: 500px;
+    }
+    .shop-img img{
+        height: 500px; 
+    }
+    /* Blog-Bottom-Banner-Image */
+    .blog-bottom-banner{ 
+        height: 100px;
+    }
+    
 }
 
 /*  */
