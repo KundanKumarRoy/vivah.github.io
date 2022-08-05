@@ -1,4 +1,4 @@
-/*  ================ Table of Content End ================
+ /*  ================ Table of Content End ================
         1. Fonts
         2. Reset
         3. Variables
@@ -126,6 +126,10 @@ body {
     font-family: 'Segoe UI Regular';
 }
 
+.nav-pills .nav-link.active {
+    background-color: var(--green-light) !important;
+}
+
 /* h1,
 h2,
 h3,
@@ -182,6 +186,10 @@ a:hover {
     background-color: var(--green-dark) !important;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .form-control {
     border: none !important;
     box-shadow: none !important;
@@ -208,7 +216,11 @@ a:hover {
     color: white;
 
 }
-
+.form-select{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
 .cus-search {
     width: 30px;
     height: 30px;
@@ -238,6 +250,14 @@ a:hover {
 
 .ob-t-f {
     object-fit: cover;
+}
+
+.ob-t-fill {
+    object-fit: fill;
+}
+
+.ob-t-cont {
+    object-fit: contain;
 }
 
 .common:hover {
@@ -312,7 +332,13 @@ a:hover {
     }
 }
 
-
+/* Wtite Review section */
+.cus-margin {
+    margin-top: -150px;
+    box-shadow: rgb(0 0 0 / 5%) 0 1px 5px 0, 0 1px 2px rgb(0 0 0 / 5%);
+    background-color: #fff;
+    z-index: 1;
+}
 
 /* ************************Home/Hero style************************** */
 .hero {
@@ -327,6 +353,7 @@ a:hover {
 
 .popular-content span {
     color: white;
+
 }
 
 /********************** Venue sliders***************** */
@@ -908,7 +935,7 @@ a:hover {
 
 .cus-photo-ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
@@ -970,11 +997,6 @@ a:hover {
 .lehenga-list-img img {
     width: 100px;
     height: 100%;
-}
-
-.lehenga-price,
-.product-details {
-    border-bottom: 3px solid gray;
 }
 
 .lehnga-shop-img img {
@@ -1051,7 +1073,7 @@ a:hover {
     object-fit: contain;
 }
 
-.blog-form>.form-control {
+.blog-form >.form-control {
     border: 1px solid black !important;
     box-shadow: none !important;
     outline: none !important;
@@ -1082,4 +1104,125 @@ a:hover {
 
 .submit-subscribe {
     background-image: url(../image/subscribe-banner.webp);
+}
+
+/*========================== wedding-album====================  */
+.wedd-alb-heading h2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 70px;
+    height: 1px;
+    background-color: red;
+
+    /* transform: translate(-50% ,-50%); */
+}
+
+.wedd-alb-heading h2::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    /* transform: translate(-50%, -50%); */
+}
+
+.wedd-alb {
+    width: 275px;
+    height: 200px;
+}
+
+.wedd-alb img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ====================== E.Card Style ==================== */
+.sec-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/E.card.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.sec-bg1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/E.card1.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-family {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* .God-title{ 
+    top: 23%;
+    left: 50%; 
+}
+.party{ 
+    top: 34%;
+    left: 50%;
+}
+.couple { 
+    top: 60%;
+    left: 50%; 
+    text-align: center;
+}
+.spcial-title{
+    top: 45%;
+    left: 50%; 
+}
+ .date{
+    bottom: 0%;
+    left: 50%; 
+    text-align: center;
+ } */
+
+/* ===================== Blog-Detail-Html===================== */
+.b-d-h>h2::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: var(--green-dark);
+
+}
+
+.b-d-h>h2::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: var(--green-dark);
+
+}
+
+.sc-m {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--green-dark);
+}
+.b-log-comment-user-profile{
+    width:100px; 
+    height:100px;
+}
+.b-log-comment-user-profile img{
+    width:100px; 
+    height:100px;
 }
